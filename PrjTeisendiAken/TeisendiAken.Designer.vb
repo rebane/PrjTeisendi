@@ -22,12 +22,17 @@ Partial Class TeisendiAken
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnTeisenda = New System.Windows.Forms.Button()
         Me.txtKilomeetrid = New System.Windows.Forms.TextBox()
         Me.txtMiilid = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblKell = New System.Windows.Forms.Label()
+        Me.timerKell = New System.Windows.Forms.Timer(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SulgeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnTeisenda
@@ -81,6 +86,25 @@ Partial Class TeisendiAken
         Me.lblKell.TabIndex = 5
         Me.lblKell.Text = "Kell"
         '
+        'timerKell
+        '
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SulgeToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 33)
+        Me.MenuStrip1.TabIndex = 6
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'SulgeToolStripMenuItem
+        '
+        Me.SulgeToolStripMenuItem.Name = "SulgeToolStripMenuItem"
+        Me.SulgeToolStripMenuItem.Size = New System.Drawing.Size(70, 29)
+        Me.SulgeToolStripMenuItem.Text = "sulge"
+        '
         'TeisendiAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -92,8 +116,12 @@ Partial Class TeisendiAken
         Me.Controls.Add(Me.txtMiilid)
         Me.Controls.Add(Me.txtKilomeetrid)
         Me.Controls.Add(Me.btnTeisenda)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "TeisendiAken"
         Me.Text = "Distantsi teisendaja"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -105,4 +133,7 @@ Partial Class TeisendiAken
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents lblKell As Label
+    Friend WithEvents timerKell As Timer
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents SulgeToolStripMenuItem As ToolStripMenuItem
 End Class
