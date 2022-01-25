@@ -49,6 +49,7 @@ Partial Class TeisendiAken
         '
         Me.txtMiilid.Location = New System.Drawing.Point(451, 274)
         Me.txtMiilid.Name = "txtMiilid"
+        Me.txtMiilid.ReadOnly = True
         Me.txtMiilid.Size = New System.Drawing.Size(100, 26)
         Me.txtMiilid.TabIndex = 2
         '
