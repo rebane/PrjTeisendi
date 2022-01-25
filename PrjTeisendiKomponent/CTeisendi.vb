@@ -7,7 +7,11 @@
 
 
     Public Function teisendaKilomeetridMiilideks(km As Double) As Double Implements ITeisendi.teisendaKilomeetridMiilideks
-        miilid = km / KM2MI
+        teisendaKmMi(km)
         Return miilid
     End Function
+
+    Private Sub teisendaKmMi(ByVal km As Double)
+        miilid = km / KM2MI
+    End Sub
 End Class
