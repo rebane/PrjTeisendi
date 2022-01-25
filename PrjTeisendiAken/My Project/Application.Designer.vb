@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.PrjTeisendiAken.Form1
+            Me.MainForm = Global.PrjTeisendiAken.TeisendiAken
         End Sub
     End Class
 End Namespace
