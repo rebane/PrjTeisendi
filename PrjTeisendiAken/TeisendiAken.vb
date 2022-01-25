@@ -5,8 +5,11 @@
     End Sub
 
     Private Sub btnTeisenda_Click(sender As Object, e As EventArgs) Handles btnTeisenda.Click
+        Dim teisendaja As PrjTeisendiKomponent.ITeisendi
+        teisendaja = New PrjTeisendiKomponent.CTeisendi
         Try
-            txtMiilid.Text = KilometersToMiles(txtKilomeetrid.Text)
+            ' txtMiilid.Text = KilometersToMiles(txtKilomeetrid.Text
+            txtMiilid.Text = teisendaja.teisendaKilomeetridMiilideks(txtKilomeetrid.Text)
         Catch ex As Exception
             txtMiilid.Text = "Viga!"
         End Try
