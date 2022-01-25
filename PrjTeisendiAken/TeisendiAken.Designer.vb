@@ -27,6 +27,7 @@ Partial Class TeisendiAken
         Me.txtMiilid = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblKell = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnTeisenda
@@ -71,11 +72,21 @@ Partial Class TeisendiAken
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Miilid:"
         '
+        'lblKell
+        '
+        Me.lblKell.AutoSize = True
+        Me.lblKell.Location = New System.Drawing.Point(311, 367)
+        Me.lblKell.Name = "lblKell"
+        Me.lblKell.Size = New System.Drawing.Size(34, 20)
+        Me.lblKell.TabIndex = 5
+        Me.lblKell.Text = "Kell"
+        '
         'TeisendiAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblKell)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtMiilid)
@@ -93,4 +104,5 @@ Partial Class TeisendiAken
     Friend WithEvents txtMiilid As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents lblKell As Label
 End Class

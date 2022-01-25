@@ -6,11 +6,12 @@
 
     Private Sub btnTeisenda_Click(sender As Object, e As EventArgs) Handles btnTeisenda.Click
         Try
-            txtMiilid.Text = txtKilomeetrid.Text / KM2MI
+            txtMiilid.Text = KilometersToMiles(txtKilomeetrid.Text)
         Catch ex As Exception
-            MsgBox("Viga!")
+            txtMiilid.Text = "Viga!"
         End Try
-
-
     End Sub
+    Private Function KilometersToMiles(ByVal km As Double) As Double
+        Return km / KM2MI
+    End Function
 End Class
